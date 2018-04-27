@@ -14,7 +14,6 @@ public class ConverterServlet extends HttpServlet {
         float vnd = rate * usd;
         DecimalFormat formatter = new DecimalFormat("###,###,###");
 
-        System.out.println(formatter.format(vnd));
         PrintWriter printWriter = response.getWriter();
         printWriter.println("<html>");
         printWriter.println("<h1>Rate: " + rate + "</h1>");
